@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/main.cpp
+iostream
+-
+eigen3/Eigen/Core
+-
+vector
+-
+opencv2/opencv.hpp
+-
+eigen3/Eigen/Cholesky
+-
+eigen3/Eigen/QR
+-
+eigen3/Eigen/SVD
+-
+chrono
+-
+

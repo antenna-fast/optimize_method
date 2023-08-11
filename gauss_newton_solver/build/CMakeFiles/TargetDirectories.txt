@@ -1,0 +1,7 @@
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/install/strip.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/edit_cache.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/gauss_newton.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/install.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/rebuild_cache.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/list_install_components.dir
+/home/antenna/ssd/App/Learn/optimize/optimize_method/gauss_newton_solver/build/CMakeFiles/install/local.dir

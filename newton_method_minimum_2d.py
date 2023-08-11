@@ -1,40 +1,14 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-import visdom
 
-# find the minimum of y
-# y = x^2 + x + 1
-# y' = 2x + 1
-# y'' = 2
+# 2-Dim Newton
 
-x0 = 91.91
-
-g = 2*x0 + 1  # f'(x0)
-gg = 2  # f''(x0)
-
-while abs(g) > 0.001:
-    # update x0
-    x0 = -g/gg + x0
-
-    # update one order partial
-    g = 2*x0 + 1
-
-    # update two order partial, will, in this case it is constant
-    gg = 2
-
-    print(g)
-
-y = x0**2 + x0 + 1
-print('\nx_final is {0}, and min_y is {1}'.format(x0, y))
-
-
-#  2-Dim Newton
 # z = x^2 + y^2 + x + y + xy + 1
 # partial x = 2*x + y + 1
 # partial y = 2*y + x + 1
 
-x0 = [1, 1]  # nit point
+x0 = [1, 1]  # init point
 
 p_x = 2*x0[0] + x0[1] + 1
 p_y = 2*x0[1] + x0[0] + 1
@@ -64,7 +38,7 @@ while g0_norm > 0.01:
     # print('x0:', x0)
     pts.append(x0)
 
-    # update g0 sprct partail x/y
+    # update g0 partial x/y (Jacobin)
     p_x = 2 * x0[0] + x0[1] + 1
     p_y = 2 * x0[1] + x0[0] + 1
     g0 = [p_x, p_y]
@@ -78,9 +52,3 @@ while g0_norm > 0.01:
     print('y: ', y)
     z.append(z)
     time.sleep(0.01)  # fastidium delay...
-
-# pts = np.array(pts).T
-# # print(x0.shape)
-# print('pts:', pts)
-# plt.scatter(pts[0], pts[1], marker='*')
-# plt.show()
